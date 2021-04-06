@@ -11,6 +11,7 @@ class FavoriteMusicFinder:
         self.favorite_artists = []
         self.favorite_generes = []
         self.scope = 'user-top-read'
+        self.find_music()
 
     def find_music(self):
         sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=self.spotify_client_id,
